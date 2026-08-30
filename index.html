@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لؤلؤة مكة للعمرة | تنظيم رحلات العمرة من الرياض - فنادق 5 نجوم قرب الحرم</title>
+<meta name="description" content="لؤلؤة مكة للعمرة - مكتب متخصص في تنظيم رحلات العمرة والزيارة من الرياض إلى مكة والمدينة مع إقامة في فنادق 4 و 5 نجوم قريبة من الحرم ونقل مريح ومتابعة مستمرة">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --gold:#c9a86a;
+  --gold-dark:#a88a4a;
+  --gold-light:#f5e6c8;
+  --navy:#0f2a44;
+  --navy-light:#16365e;
+  --cream:#fdfaf6;
+  --cream2:#f9f5ee;
+  --text:#1a2a3a;
+  --muted:#6b7a8a;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',sans-serif;color:var(--text);background:#fff;line-height:1.7;overflow-x:hidden}
+a{text-decoration:none}
+img{max-width:100%;display:block}
+
+/* Header */
+.top-bar{background:var(--navy);color:#fff;font-size:13px;padding:7px 0;text-align:center}
+.top-bar span{color:var(--gold)}
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.98);backdrop-filter:blur(8px);box-shadow:0 2px 20px rgba(15,42,68,0.08);border-bottom:1px solid #eee;transition:transform 0.35s ease, box-shadow 0.3s}
+.header.header-hidden{transform:translateY(-100%)}
+body{padding-top:72px}
+@media(max-width:640px){body{padding-top:64px}}
+.header-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-icon{width:44px;height:44px;background:var(--navy);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:20px;position:relative}
+.logo-icon::after{content:'';position:absolute;inset:3px;border:1px solid rgba(201,168,106,0.3);border-radius:8px}
+.logo-text h1{font-size:18px;font-weight:800;color:var(--navy);line-height:1}
+.logo-text p{font-size:11px;color:var(--gold-dark);letter-spacing:2px;font-weight:600;margin-top:2px}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{color:var(--navy);font-weight:600;font-size:15px;position:relative;padding:4px 0}
+.nav a.active::after,.nav a:hover::after{content:'';position:absolute;bottom:-2px;right:0;width:100%;height:2px;background:var(--gold)}
+.header-actions{display:flex;align-items:center;gap:10px}
+.btn-call{background:var(--navy);color:#fff;padding:10px 18px;border-radius:28px;font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px;transition:.3s}
+.btn-call:hover{background:var(--navy-light);transform:translateY(-1px)}
+.btn-wa{background:#25d366;color:#fff;padding:10px 18px;border-radius:28px;font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px;transition:.3s}
+.btn-wa:hover{background:#1fb85a;transform:translateY(-1px)}
+.menu-toggle{display:none;background:none;border:none;font-size:24px;color:var(--navy);cursor:pointer}
+
+/* Hero - Premium Spacious */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:var(--navy)}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1590077428593-a55bb07c4665?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;filter:brightness(0.58) saturate(1.05)}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to left, rgba(10,30,53,0.88) 0%, rgba(15,42,68,0.62) 48%, rgba(15,42,68,0.18) 100%)}
+.hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:82px 20px 78px;width:100%;display:grid;grid-template-columns:1.02fr 0.98fr;gap:56px;align-items:center}
+.hero-text{color:#fff;max-width:560px}
+.hero-badge{display:inline-flex;align-items:center;gap:9px;background:rgba(201,168,106,0.12);border:1px solid rgba(201,168,106,0.28);color:var(--gold-light);padding:8px 16px;border-radius:30px;font-size:12.5px;font-weight:700;letter-spacing:0.3px;margin-bottom:22px;backdrop-filter:blur(8px)}
+.hero-badge i{color:var(--gold);font-size:11px}
+.hero h2{font-size:50px;font-weight:900;line-height:1.18;margin-bottom:18px;letter-spacing:-0.5px}
+.hero h2 span{color:var(--gold);position:relative}
+.hero h2 span::after{content:'';position:absolute;bottom:7px;right:0;width:100%;height:10px;background:linear-gradient(to left, rgba(201,168,106,0.28), rgba(201,168,106,0.06));z-index:-1;border-radius:2px}
+.hero-sub{font-size:17.5px;line-height:1.85;color:rgba(255,255,255,0.86);margin-bottom:32px;font-weight:400;max-width:520px}
+.hero-sub strong{color:#fff;font-weight:700}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.btn-primary{background:var(--gold);color:var(--navy);padding:15px 28px;border-radius:30px;font-weight:800;font-size:15.5px;letter-spacing:0.2px;display:inline-flex;align-items:center;gap:10px;transition:.3s;box-shadow:0 10px 28px rgba(201,168,106,0.32)}
+.btn-primary:hover{background:#d4b77a;transform:translateY(-2px);box-shadow:0 14px 32px rgba(201,168,106,0.42)}
+.btn-secondary{background:rgba(255,255,255,0.10);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:15px 28px;border-radius:30px;font-weight:700;font-size:15.5px;display:inline-flex;align-items:center;gap:10px;transition:.3s}
+.btn-secondary:hover{background:rgba(255,255,255,0.16);transform:translateY(-2px);border-color:rgba(255,255,255,0.32)}
+.hero-features{display:flex;gap:26px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.10);padding-top:22px;margin-top:6px}
+.hero-feature{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.92);font-size:13.5px;font-weight:500;letter-spacing:0.1px}
+.hero-feature i{width:36px;height:36px;background:rgba(201,168,106,0.13);border:1px solid rgba(201,168,106,0.22);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:13px;flex-shrink:0}
+.hero-image{position:relative;display:flex;align-items:center;justify-content:center;padding:10px}
+.hero-card{position:relative;width:100%;max-width:440px;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,0.32), 0 8px 24px rgba(0,0,0,0.12);transform:none;border:1px solid rgba(255,255,255,0.08)}
+.hero-card img{width:100%;height:340px;object-fit:cover}
+.hero-card-body{padding:20px 18px 18px}
+.hero-card-body h4{font-size:15.5px;font-weight:800;color:var(--navy);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.hero-card-body h4 i{color:var(--gold);font-size:14px}
+.hero-card-body p{font-size:12.8px;color:var(--muted);line-height:1.65}
+.hero-card-badge{position:absolute;top:16px;right:16px;background:var(--gold);color:var(--navy);padding:7px 14px;border-radius:20px;font-size:12px;font-weight:800;letter-spacing:0.2px;box-shadow:0 6px 16px rgba(0,0,0,0.18)}
+.hero-stats{position:absolute;bottom:-20px;left:-16px;background:var(--navy);color:#fff;padding:14px 18px;border-radius:16px;display:flex;gap:20px;box-shadow:0 16px 36px rgba(0,0,0,0.28);border:1px solid rgba(201,168,106,0.18);backdrop-filter:blur(8px)}
+.stat{text-align:center}
+.stat b{display:block;font-size:18px;font-weight:900;color:var(--gold);line-height:1}
+.stat span{font-size:11px;opacity:0.85}
+
+/* Section common */
+.section{padding:70px 0}
+.section-cream{background:var(--cream)}
+.section-navy{background:var(--navy);color:#fff}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.section-head{text-align:center;max-width:640px;margin:0 auto 44px}
+.section-head .eyebrow{display:inline-block;color:var(--gold-dark);background:var(--gold-light);padding:4px 14px;border-radius:20px;font-size:13px;font-weight:700;letter-spacing:1px;margin-bottom:12px}
+.section-head h3{font-size:36px;font-weight:900;color:var(--navy);line-height:1.2;margin-bottom:12px}
+.section-head h3 span{color:var(--gold-dark)}
+.section-head p{color:var(--muted);font-size:16px;line-height:1.7}
+.section-navy .section-head h3{color:#fff}
+.section-navy .section-head p{color:rgba(255,255,255,0.7)}
+.section-navy .eyebrow{background:rgba(201,168,106,0.15);color:var(--gold);border:1px solid rgba(201,168,106,0.25)}
+
+/* Programs */
+.programs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.program-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 30px rgba(15,42,68,0.08);border:1px solid #f0ece4;transition:.35s;display:flex;flex-direction:column}
+.program-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(15,42,68,0.14)}
+.program-img{position:relative;height:210px;overflow:hidden}
+.program-img img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.program-card:hover .program-img img{transform:scale(1.07)}
+.program-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to top, rgba(15,42,68,0.55), transparent 55%)}
+.program-tag{position:absolute;top:12px;right:12px;z-index:2;background:var(--gold);color:var(--navy);padding:5px 11px;border-radius:20px;font-size:12px;font-weight:800}
+.program-tag.dark{background:var(--navy);color:#fff}
+.program-icon{position:absolute;bottom:12px;right:14px;z-index:2;width:42px;height:42px;background:rgba(255,255,255,0.95);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--navy);font-size:18px;box-shadow:0 4px 12px rgba(0,0,0,0.15)}
+.program-body{padding:20px;flex:1;display:flex;flex-direction:column}
+.program-body h4{font-size:18px;font-weight:800;color:var(--navy);margin-bottom:10px}
+.program-body ul{list-style:none;margin-bottom:16px;flex:1}
+.program-body ul li{position:relative;padding-right:20px;font-size:13.5px;color:#4a5a6a;line-height:1.7;margin-bottom:5px}
+.program-body ul li::before{content:'✓';position:absolute;right:0;top:0;width:16px;height:16px;background:var(--gold-light);color:var(--gold-dark);border-radius:50%;font-size:10px;display:flex;align-items:center;justify-content:center;font-weight:900;line-height:16px;text-align:center}
+.btn-card{width:100%;background:var(--navy);color:#fff;padding:11px;border-radius:28px;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;gap:8px;transition:.3s;border:none;cursor:pointer}
+.btn-card:hover{background:var(--navy-light)}
+.btn-card.gold{background:var(--gold);color:var(--navy)}
+.btn-card.gold:hover{background:#d4b77a}
+.btn-card.green{background:#25d366;color:#fff}
+.btn-card.green:hover{background:#1fb85a}
+
+/* About */
+.about{padding:80px 0;background:#fff}
+.about-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:50px;align-items:center}
+.about-text .eyebrow{color:var(--gold-dark);background:var(--gold-light);padding:4px 12px;border-radius:20px;font-size:13px;font-weight:700;display:inline-block;margin-bottom:14px}
+.about-text h3{font-size:38px;font-weight:900;color:var(--navy);line-height:1.2;margin-bottom:16px}
+.about-text h3 span{color:var(--gold-dark)}
+.about-text .lead{font-size:17px;color:var(--muted);line-height:1.8;margin-bottom:18px}
+.about-text .lead strong{color:var(--navy)}
+.about-list{list-style:none;margin:22px 0;display:grid;gap:10px}
+.about-list li{display:flex;align-items:center;gap:10px;font-size:14.5px;color:#2a3a4a;font-weight:500}
+.about-list li i{width:30px;height:30px;background:var(--cream2);border:1px solid #f0e6d3;color:var(--gold-dark);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+.about-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.about-image{position:relative}
+.about-image-main{border-radius:20px;overflow:hidden;box-shadow:0 20px 50px rgba(15,42,68,0.15);border:4px solid #fff}
+.about-image-main img{width:100%;height:420px;object-fit:cover}
+.about-badge{position:absolute;bottom:18px;right:18px;background:#fff;padding:14px 16px;border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,0.12);display:flex;align-items:center;gap:12px;max-width:260px;border-right:4px solid var(--gold)}
+.about-badge i{width:44px;height:44px;background:var(--navy);color:var(--gold);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.about-badge b{font-size:14px;color:var(--navy);line-height:1.2;display:block}
+.about-badge span{font-size:12px;color:var(--muted)}
+.about-deco{position:absolute;top:-14px;left:-14px;width:80px;height:80px;border:2px solid var(--gold-light);border-radius:16px;z-index:-1}
+.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.about-stat{text-align:center;background:var(--cream);border:1px solid #f0ece4;padding:14px 8px;border-radius:12px}
+.about-stat b{font-size:20px;font-weight:900;color:var(--navy);display:block}
+.about-stat span{font-size:12px;color:var(--muted)}
+
+/* Buses */
+.buses-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:14px}
+.buses-grid .bitem{border-radius:16px;overflow:hidden;position:relative;box-shadow:0 8px 24px rgba(0,0,0,0.12)}
+.buses-grid .bitem img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.buses-grid .bitem:hover img{transform:scale(1.05)}
+.buses-grid .bitem:first-child{grid-row:span 2}
+.buses-grid .bitem::after{content:'';position:absolute;inset:0;background:linear-gradient(to top, rgba(15,42,68,0.45), transparent 60%)}
+.bitem-label{position:absolute;bottom:12px;right:12px;z-index:2;background:rgba(255,255,255,0.95);padding:6px 12px;border-radius:20px;font-size:12px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:6px}
+.bitem-label i{color:var(--gold-dark)}
+
+/* Hotels */
+.hotels-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.hotel-card{border-radius:16px;overflow:hidden;position:relative;height:280px;box-shadow:0 8px 24px rgba(0,0,0,0.1);cursor:pointer}
+.hotel-card img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.hotel-card:hover img{transform:scale(1.08)}
+.hotel-card::after{content:'';position:absolute;inset:0;background:linear-gradient(to top, rgba(15,42,68,0.7) 0%, transparent 55%)}
+.hotel-info{position:absolute;bottom:0;right:0;left:0;z-index:2;padding:16px;color:#fff}
+.hotel-info h5{font-size:15px;font-weight:800;margin-bottom:4px}
+.hotel-info p{font-size:12px;opacity:0.9;display:flex;align-items:center;gap:6px}
+.hotel-info p i{color:var(--gold)}
+.hotel-stars{position:absolute;top:12px;left:12px;z-index:2;background:rgba(255,255,255,0.95);padding:5px 10px;border-radius:20px;font-size:12px;color:#f59e0b;display:flex;align-items:center;gap:4px;font-weight:700}
+
+/* Features strip */
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;background:var(--cream);border-radius:18px;padding:30px;border:1px solid #f0ece4;margin-top:40px}
+.feature{text-align:center}
+.feature i{width:48px;height:48px;background:#fff;border:1px solid #f0ece4;color:var(--gold-dark);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:20px}
+.feature h5{font-size:14px;font-weight:800;color:var(--navy);margin-bottom:4px}
+.feature p{font-size:12.5px;color:var(--muted);line-height:1.6}
+
+/* Contact CTA */
+.cta{background:var(--navy);color:#fff;padding:50px 0;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%, rgba(201,168,106,0.12), transparent 50%), radial-gradient(circle at 80% 0%, rgba(201,168,106,0.08), transparent 40%)}
+.cta-inner{max-width:1200px;margin:0 auto;padding:0 20px;position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.cta-text h3{font-size:28px;font-weight:900;margin-bottom:8px}
+.cta-text h3 span{color:var(--gold)}
+.cta-text p{color:rgba(255,255,255,0.75);font-size:15px}
+.cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+.cta-btns a{padding:13px 24px;border-radius:30px;font-weight:800;font-size:15px;display:flex;align-items:center;gap:8px;transition:.3s}
+.cta-btns .btn-gold{background:var(--gold);color:var(--navy)}
+.cta-btns .btn-gold:hover{background:#d4b77a;transform:translateY(-2px)}
+.cta-btns .btn-white{background:#fff;color:var(--navy)}
+.cta-btns .btn-white:hover{background:#f5f5f5;transform:translateY(-2px)}
+
+/* Footer */
+.footer{background:#0a1e35;color:rgba(255,255,255,0.8);padding:50px 0 0}
+.footer-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:1.6fr 0.8fr 0.8fr 1.1fr;gap:36px}
+.footer-brand h4{font-size:20px;font-weight:900;color:#fff;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.footer-brand h4 i{color:var(--gold)}
+.footer-brand p{font-size:13.5px;line-height:1.8;color:rgba(255,255,255,0.65);margin-bottom:16px}
+.footer-social{display:flex;gap:8px}
+.footer-social a{width:36px;height:36px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:.3s}
+.footer-social a:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.footer-col h5{font-size:14px;font-weight:800;color:#fff;margin-bottom:14px;position:relative;padding-bottom:8px}
+.footer-col h5::after{content:'';position:absolute;bottom:0;right:0;width:30px;height:2px;background:var(--gold)}
+.footer-col ul{list-style:none;display:grid;gap:8px}
+.footer-col ul a{color:rgba(255,255,255,0.65);font-size:13.5px;transition:.2s;display:flex;align-items:center;gap:6px}
+.footer-col ul a:hover{color:var(--gold);padding-right:6px}
+.footer-contact li{color:rgba(255,255,255,0.65);font-size:13.5px;display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.footer-contact li i{width:32px;height:32px;background:rgba(201,168,106,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:13px;flex-shrink:0}
+.footer-bottom{margin-top:40px;border-top:1px solid rgba(255,255,255,0.08);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;max-width:1200px;margin-left:auto;margin-right:auto;font-size:13px;color:rgba(255,255,255,0.5)}
+.footer-bottom a{color:var(--gold)}
+
+/* Floating */
+.floating{position:fixed;bottom:20px;left:20px;z-index:999;display:flex;flex-direction:column;gap:10px}
+.float-btn{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;box-shadow:0 8px 24px rgba(0,0,0,0.2);transition:.3s;animation:floatPulse 2.5s infinite}
+.float-btn:hover{transform:scale(1.08)}
+.float-wa{background:#25d366}
+.float-call{background:var(--navy)}
+@keyframes floatPulse{0%,100%{box-shadow:0 8px 24px rgba(0,0,0,0.2)}50%{box-shadow:0 8px 30px rgba(37,211,102,0.4)}}
+
+/* Responsive */
+@media(max-width:1024px){
+  .programs-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-content{grid-template-columns:1fr;gap:30px}
+  .hero-image{display:none}
+  .about-grid{grid-template-columns:1fr;gap:36px}
+  .buses-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}
+  .buses-grid .bitem:first-child{grid-row:span 1;grid-column:span 2}
+  .hotels-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:30px}
+  .features{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .header-inner{height:64px}
+  .nav{display:none;position:absolute;top:64px;right:0;left:0;background:#fff;flex-direction:column;padding:18px 20px;box-shadow:0 12px 30px rgba(0,0,0,0.1);border-top:1px solid #eee;gap:16px;align-items:flex-start}
+  .nav.open{display:flex}
+  .menu-toggle{display:block}
+  .header-actions .btn-call,.header-actions .btn-wa{padding:8px 12px;font-size:13px}
+  .header-actions .btn-call span,.header-actions .btn-wa span{display:none}
+  /* Hero Mobile - Optimized */
+  .hero{min-height:560px}
+  .hero-bg{background:url('https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=900&auto=format&fit=crop') center 30%/cover no-repeat !important;filter:brightness(0.82) contrast(1.08) !important;opacity:1 !important}
+  .hero::after{background:linear-gradient(to bottom, rgba(10,30,53,0.78) 0%, rgba(15,42,68,0.62) 38%, rgba(15,42,68,0.55) 62%, rgba(10,30,53,0.82) 100%) !important}
+  .hero-content{padding:28px 16px 32px;gap:20px;grid-template-columns:1fr}
+  .hero-text{text-align:center}
+  .hero-badge{font-size:11px;padding:6px 12px;line-height:1.5;justify-content:center;white-space:normal;text-align:center;margin:0 auto 14px;max-width:100%}
+  .hero h2{font-size:29px;line-height:1.3;text-align:center;margin-bottom:10px;text-shadow:0 2px 16px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.4)}
+  .hero-sub{font-size:14.5px;line-height:1.7;text-align:center;margin:0 auto 18px;max-width:100%;text-shadow:0 1px 10px rgba(0,0,0,0.5)}
+  .hero-badge{backdrop-filter:blur(8px);background:rgba(201,168,106,0.22) !important;border-color:rgba(201,168,106,0.4) !important;box-shadow:0 2px 12px rgba(0,0,0,0.25)}
+  .hero-sub strong{white-space:nowrap}
+  .hero-btns{flex-direction:column;gap:10px;margin-bottom:18px}
+  .hero-btns a{width:100%;justify-content:center;padding:13px 16px;font-size:14.5px;border-radius:28px}
+  .hero-features{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.12)}
+  .hero-feature{font-size:12.5px;gap:7px;justify-content:flex-start;text-align:right}
+  .hero-feature i{width:28px;height:28px;font-size:11px;flex-shrink:0}
+  .hero-image{display:flex !important;justify-content:center;margin-top:6px}
+  .hero-card{max-width:100%;width:100%;transform:none;border-radius:16px}
+  .hero-card img{height:200px}
+  .hero-card-body{padding:14px}
+  .hero-card-body h4{font-size:14px}
+  .hero-card-body p{font-size:12px}
+  .hero-stats{left:12px;right:12px;bottom:-14px;padding:10px 10px;gap:0;justify-content:space-around;border-radius:12px}
+  .stat b{font-size:15px}
+  .stat span{font-size:10px}
+  .section-head h3{font-size:26px}
+  .programs-grid{grid-template-columns:1fr}
+  .buses-grid{grid-template-columns:1fr;grid-template-rows:repeat(4,200px)}
+  .buses-grid .bitem:first-child{grid-column:span 1}
+  .hotels-grid{grid-template-columns:1fr}
+  .cta-inner{flex-direction:column;text-align:center}
+  .cta-btns{justify-content:center}
+  .footer-inner{grid-template-columns:1fr}
+  .about-stats{grid-template-columns:repeat(3,1fr)}
+  .features{grid-template-columns:1fr 1fr}
+}
+@media(max-width:380px){
+  .hero h2{font-size:25px}
+  .hero-features{grid-template-columns:1fr}
+  .hero-feature{justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><i class="fa-solid fa-gem"></i></div>
+      <div class="logo-text">
+        <h1>لؤلؤة مكة للعمرة</h1>
+        <p>LULUAT MAKKAH</p>
+      </div>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#" class="active">الرئيسية</a>
+      <a href="#programs">برامج العمرة</a>
+      <a href="#about">من نحن</a>
+      <a href="#hotels">الفنادق</a>
+      <a href="#buses">النقل</a>
+      <a href="#contact">اتصل بنا</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:0580489760" class="btn-call"><i class="fa-solid fa-phone"></i> <span>0580489760</span></a>
+      <a href="https://wa.me/966580489760" target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> <span>واتساب</span></a>
+      <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge"><i class="fa-solid fa-star-and-crescent"></i> خدمة ضيوف الرحمن &nbsp;•&nbsp; رحلات أسبوعية منتظمة من الرياض</div>
+      <h2>لؤلؤة مكة <span>للعمرة</span></h2>
+      <p class="hero-sub">تنظيم احترافي من <strong>الرياض إلى مكة المكرمة والمدينة المنورة</strong>، مع إقامة مختارة بعناية في <strong>فنادق 4 و 5 نجوم قريبة من الحرم</strong> وراحة تامة في كل خطوة.</p>
+      <div class="hero-btns">
+        <a href="tel:0580489760" class="btn-primary"><i class="fa-solid fa-phone"></i> اتصل بنا الآن - 0580489760</a>
+        <a href="https://wa.me/966580489760" target="_blank" class="btn-secondary"><i class="fa-brands fa-whatsapp"></i> تواصل واتساب</a>
+      </div>
+      <div class="hero-features">
+        <div class="hero-feature"><i class="fa-solid fa-bus"></i> باصات حديثة ومريحة</div>
+        <div class="hero-feature"><i class="fa-solid fa-hotel"></i> فنادق قريبة من الحرم</div>
+        <div class="hero-feature"><i class="fa-solid fa-user-tie"></i> إشراف متكامل</div>
+        <div class="hero-feature"><i class="fa-solid fa-shield-halved"></i> متابعة 24/7</div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-card">
+        <span class="hero-card-badge"><i class="fa-solid fa-crown"></i> الأكثر طلباً</span>
+        <img src="https://darelhidaya.com/wp-content/uploads/2024/11/e2c3805e-95e8-492a-b6b2-6ce853421823.jpeg" alt="الحرم المكي">
+        <div class="hero-card-body">
+          <h4><i class="fa-solid fa-kaaba"></i> رحلة العمرة الميسرة</h4>
+          <p>انطلاق أسبوعي من الرياض • 4 أيام / 3 ليالي • إقامة فاخرة • نقل VIP • إشراف ديني</p>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>+5000</b><span>معتمر</span></div>
+        <div class="stat"><b>4.9★</b><span>تقييم العملاء</span></div>
+        <div class="stat"><b>5★</b><span>فنادق</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-cream" id="programs">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">برامجنا المميزة</span>
+      <h3>برامج <span>العمرة</span></h3>
+      <p>اختر البرنامج الذي يناسبك — جميع برامجنا تشمل النقل المريح والإقامة القريبة من الحرم والمتابعة المستمرة</p>
+    </div>
+
+    <div class="programs-grid">
+      <!-- Card 1 -->
+      <div class="program-card">
+        <div class="program-img">
+          <img src="https://darelhidaya.com/wp-content/uploads/2024/11/e2c3805e-95e8-492a-b6b2-6ce853421823.jpeg" alt="رحلات اقتصادية">
+          <span class="program-tag">اقتصادي</span>
+          <div class="program-icon"><i class="fa-solid fa-bus"></i></div>
+        </div>
+        <div class="program-body">
+          <h4>رحلات اقتصادية</h4>
+          <ul>
+            <li>نقل مريح من الرياض</li>
+            <li>تنقل داخلي منظم</li>
+            <li>متابعة المشرفين طوال الرحلة</li>
+            <li>إقامة في فندق 4 أو 5 نجوم قريب من الحرم</li>
+          </ul>
+          <a href="https://wa.me/966580489760?text=السلام%20عليكم%20ارغب%20الاستفسار%20عن%20الرحلات%20الاقتصادية" target="_blank" class="btn-card green"><i class="fa-brands fa-whatsapp"></i> تواصل واتساب</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="program-card">
+        <div class="program-img">
+          <img src="https://darelhidaya.com/wp-content/uploads/2024/11/3c18d127-08b5-4d6d-8461-58ee715c5911.jpeg" alt="رحلات VIP">
+          <span class="program-tag dark">VIP</span>
+          <div class="program-icon"><i class="fa-solid fa-crown"></i></div>
+        </div>
+        <div class="program-body">
+          <h4>رحلات VIP</h4>
+          <ul>
+            <li>إقامة أطول في فنادق فاخرة</li>
+            <li>وقت أوسع للطواف والقيام</li>
+            <li>برنامج مرن حسب المجموعة</li>
+            <li>خدمة مرافقة مستمرة</li>
+          </ul>
+          <a href="https://wa.me/966580489760?text=السلام%20عليكم%20ارغب%20الاستفسار%20عن%20رحلات%20VIP" target="_blank" class="btn-card green"><i class="fa-brands fa-whatsapp"></i> تواصل واتساب</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="program-card">
+        <div class="program-img">
+          <img src="https://darelhidaya.com/wp-content/uploads/2024/11/608f8b99-fe1c-4a48-93e0-b61ad20f93af.jpeg" alt="حجز فنادق">
+          <span class="program-tag">حجز فنادق</span>
+          <div class="program-icon"><i class="fa-solid fa-hotel"></i></div>
+        </div>
+        <div class="program-body">
+          <h4>حجز فنادق</h4>
+          <ul>
+            <li>رحلات خاصة</li>
+            <li>مجموعات</li>
+            <li>عائلات</li>
+            <li>أسعار منافسة لفنادق 4 و 5 نجوم</li>
+          </ul>
+          <a href="https://wa.me/966580489760?text=السلام%20عليكم%20ارغب%20حجز%20فندق%20قريب%20من%20الحرم" target="_blank" class="btn-card green"><i class="fa-brands fa-whatsapp"></i> تواصل واتساب</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="program-card">
+        <div class="program-img">
+          <img src="https://darelhidaya.com/wp-content/uploads/2024/11/room1.jpeg" alt="باقات العوائل">
+          <span class="program-tag dark">للعائلات</span>
+          <div class="program-icon"><i class="fa-solid fa-people-group"></i></div>
+        </div>
+        <div class="program-body">
+          <h4>باقات العوائل</h4>
+          <ul>
+            <li>غرف خاصة للعائلة</li>
+            <li>مقاعد متجاورة في الباص</li>
+            <li>تنظيم يناسب كبار السن والأطفال</li>
+            <li>تعامل هادئ وصبور في جميع المراحل</li>
+          </ul>
+          <a href="https://wa.me/966580489760?text=السلام%20عليكم%20ارغب%20الاستفسار%20عن%20باقات%20العوائل" target="_blank" class="btn-card green"><i class="fa-brands fa-whatsapp"></i> تواصل واتساب</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature"><i class="fa-solid fa-hand-holding-dollar"></i><h5>أسعار تنافسية</h5><p>بدون رسوم خفية والدفع ميسر</p></div>
+      <div class="feature"><i class="fa-solid fa-headset"></i><h5>دعم 24 ساعة</h5><p>مشرف مرافق طوال الرحلة</p></div>
+      <div class="feature"><i class="fa-solid fa-map-location-dot"></i><h5>موقع مميز</h5><p>فنادق على بعد خطوات من الحرم</p></div>
+      <div class="feature"><i class="fa-solid fa-award"></i><h5>ثقة العملاء</h5><p>آلاف المعتمرين راضون عن خدماتنا</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="eyebrow">تعرف علينا</span>
+        <h3>من <span>نحن</span></h3>
+        <p class="lead"><strong>لؤلؤة مكة للعمرة</strong> مكتب متخصص في تنظيم رحلات العمرة والزيارة من الرياض.</p>
+        <p class="lead">نؤمن أن العمرة ليست مجرد سفر... بل <strong>تجربة إيمانية متكاملة</strong>. نركّز على جودة الفنادق، راحة التنقل، وضوح البرامج، والمتابعة المستمرة — حتى تؤدي عمرتك وأنت مرتاح البال.</p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check"></i> انطلاق أسبوعي منتظم من الرياض إلى مكة والمدينة</li>
+          <li><i class="fa-solid fa-check"></i> إقامة في فنادق 4 و 5 نجوم على بعد دقائق من الحرم</li>
+          <li><i class="fa-solid fa-check"></i> باصات حديثة مكيفة مع سائقين محترفين</li>
+          <li><i class="fa-solid fa-check"></i> مشرف ديني وإداري مرافق في كل رحلة</li>
+        </ul>
+        <div class="about-stats">
+          <div class="about-stat"><b>+5</b><span>سنوات خبرة</span></div>
+          <div class="about-stat"><b>+5000</b><span>معتمر سعيد</span></div>
+          <div class="about-stat"><b>100%</b><span>التزام بالمواعيد</span></div>
+        </div>
+        <div class="about-btns">
+          <a href="tel:0580489760" class="btn-primary" style="padding:12px 22px;font-size:15px"><i class="fa-solid fa-phone"></i> اتصل بنا - 0580489760</a>
+          <a href="https://wa.me/966580489760" target="_blank" class="btn-secondary" style="background:var(--navy);border-color:var(--navy)"><i class="fa-brands fa-whatsapp"></i> واتساب مباشر</a>
+        </div>
+      </div>
+      <div class="about-image">
+        <div class="about-deco"></div>
+        <div class="about-image-main">
+          <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=900&auto=format&fit=crop" alt="الكعبة المشرفة">
+        </div>
+        <div class="about-badge">
+          <i class="fa-solid fa-kaaba"></i>
+          <div><b>خدمة ضيوف الرحمن</b><span>شرف نعتز به ومسؤولية نتحملها</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-navy" id="buses">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">راحة في الطريق</span>
+      <h3>باصات <span style="color:var(--gold)">مريحة وحديثة</span></h3>
+      <p>أسطول باصات حديثة مكيفة ومجهزة لراحتك طوال الطريق من الرياض إلى مكة والمدينة</p>
+    </div>
+    <div class="buses-grid">
+      <div class="bitem">
+        <img src="https://darelhidaya.com/wp-content/uploads/2024/11/bus2.jpeg" alt="باصات مريحة">
+        <span class="bitem-label"><i class="fa-solid fa-bus"></i> باصات VIP - 50 مقعد</span>
+      </div>
+      <div class="bitem">
+        <img src="https://darelhidaya.com/wp-content/uploads/2024/11/f8dde8c5-4f30-4d7a-acf7-aeb4a39375fc.jpeg" alt="مقاعد الباص">
+        <span class="bitem-label"><i class="fa-solid fa-chair"></i> مقاعد مريحة</span>
+      </div>
+      <div class="bitem">
+        <img src="https://darelhidaya.com/wp-content/uploads/2024/11/5.jpg" alt="باص من الداخل">
+        <span class="bitem-label"><i class="fa-solid fa-snowflake"></i> مكيف</span>
+      </div>
+      <div class="bitem">
+        <img src="https://darelhidaya.com/wp-content/uploads/2024/11/6-1024x576.jpg" alt="باص حديث">
+        <span class="bitem-label"><i class="fa-solid fa-road"></i> سائقين محترفين</span>
+      </div>
+      <div class="bitem" style="display:none"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-cream" id="hotels">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">إقامة فاخرة</span>
+      <h3>فنادق <span>قريبة من الحرم</span></h3>
+      <p>نختار لك فنادق 4 و 5 نجوم على بعد خطوات من المسجد الحرام والمسجد النبوي لتكون عبادتك أسهل</p>
+    </div>
+    <div class="hotels-grid">
+      <div class="hotel-card">
+        <img src="https://darelhidaya.com/wp-content/uploads/2024/11/room1.jpeg" alt="غرفة فندق">
+        <span class="hotel-stars"><i class="fa-solid fa-star"></i> 5 نجوم</span>
+        <div class="hotel-info"><h5>أجنحة فاخرة</h5><p><i class="fa-solid fa-location-dot"></i> 150م من الحرم المكي</p></div>
+      </div>
+      <div class="hotel-card">
+        <img src="https://darelhidaya.com/wp-content/uploads/2024/11/64c925c9-e84a-4e8b-86ca-f7322094763a-1024x682.jpeg" alt="غرفة فندقية">
+        <span class="hotel-stars"><i class="fa-solid fa-star"></i> 4 نجوم</span>
+        <div class="hotel-info"><h5>غرف عائلية واسعة</h5><p><i class="fa-solid fa-location-dot"></i> 300م من الحرم</p></div>
+      </div>
+      <div class="hotel-card">
+        <img src="https://darelhidaya.com/wp-content/uploads/2024/11/494801671.jpg" alt="ردهة فندق">
+        <span class="hotel-stars"><i class="fa-solid fa-star"></i> 5 نجوم</span>
+        <div class="hotel-info"><h5>خدمة فندقية راقية</h5><p><i class="fa-solid fa-location-dot"></i> قلب المنطقة المركزية</p></div>
+      </div>
+      <div class="hotel-card">
+        <img src="https://darelhidaya.com/wp-content/uploads/2024/11/0888795e-c89b-44f3-864d-f6cf65994927-1024x682.jpeg" alt="فندق اقتصادي">
+        <span class="hotel-stars"><i class="fa-solid fa-star"></i> 3 نجوم</span>
+        <div class="hotel-info"><h5>فنادق اقتصادية</h5><p><i class="fa-solid fa-location-dot"></i> 500م من الحرم - سعر اقتصادي</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="cta-inner">
+    <div class="cta-text">
+      <h3>جاهز لرحلة <span>العمرة؟</span></h3>
+      <p>تواصل معنا الآن للحجز أو الاستفسار — فريقنا جاهز للرد على مدار الساعة</p>
+    </div>
+    <div class="cta-btns">
+      <a href="tel:0580489760" class="btn-gold"><i class="fa-solid fa-phone"></i> 0580489760 - اتصل الآن</a>
+      <a href="https://wa.me/966580489760?text=السلام%20عليكم%20ارغب%20الحجز%20في%20احدى%20رحلات%20العمرة" target="_blank" class="btn-white"><i class="fa-brands fa-whatsapp"></i> واتساب مباشر</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h4><i class="fa-solid fa-gem"></i> لؤلؤة مكة للعمرة</h4>
+      <p>مكتب متخصص في تنظيم رحلات العمرة والزيارة من الرياض إلى مكة المكرمة والمدينة المنورة. نخدم ضيوف الرحمن بكل حب وإتقان، ونسعى لتكون رحلتكم مريحة وميسرة.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/966580489760" target="_blank" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="tel:0580489760" aria-label="اتصال"><i class="fa-solid fa-phone"></i></a>
+        <a href="#" aria-label="انستقرام"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="تويتر"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="تيك توك"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>روابط سريعة</h5>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-angle-left"></i> الرئيسية</a></li>
+        <li><a href="#programs"><i class="fa-solid fa-angle-left"></i> برامج العمرة</a></li>
+        <li><a href="#about"><i class="fa-solid fa-angle-left"></i> من نحن</a></li>
+        <li><a href="#hotels"><i class="fa-solid fa-angle-left"></i> الفنادق</a></li>
+        <li><a href="#buses"><i class="fa-solid fa-angle-left"></i> النقل</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>برامجنا</h5>
+      <ul>
+        <li><a href="#programs"><i class="fa-solid fa-angle-left"></i> رحلات اقتصادية</a></li>
+        <li><a href="#programs"><i class="fa-solid fa-angle-left"></i> رحلات VIP</a></li>
+        <li><a href="#programs"><i class="fa-solid fa-angle-left"></i> حجز فنادق</a></li>
+        <li><a href="#programs"><i class="fa-solid fa-angle-left"></i> باقات العوائل</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>تواصل معنا</h5>
+      <ul class="footer-contact" style="list-style:none">
+        <li><i class="fa-solid fa-location-dot"></i> الرياض - المملكة العربية السعودية</li>
+        <li><i class="fa-solid fa-phone"></i> <a href="tel:0580489760" style="color:rgba(255,255,255,0.65)">0580489760</a></li>
+        <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/966580489760" target="_blank" style="color:rgba(255,255,255,0.65)">966580489760+</a></li>
+        <li><i class="fa-solid fa-clock"></i> خدمة العملاء 24/7</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright © 2026 لؤلؤة مكة للعمرة - جميع الحقوق محفوظة</span>
+    <span>الرياض - المملكة العربية السعودية &nbsp;|&nbsp; <a href="https://wa.me/966580489760" target="_blank">تواصل معنا <i class="fa-brands fa-whatsapp"></i></a></span>
+  </div>
+</footer>
+
+<div class="floating">
+  <a href="https://wa.me/966580489760?text=السلام%20عليكم%20ارغب%20الاستفسار%20عن%20رحلات%20العمرة" target="_blank" class="float-btn float-wa" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+  <a href="tel:0580489760" class="float-btn float-call" aria-label="اتصال"><i class="fa-solid fa-phone"></i></a>
+</div>
+
+<script>
+const toggle=document.getElementById('menuToggle');
+const nav=document.getElementById('nav');
+const header=document.querySelector('.header');
+let lastY=window.scrollY;
+let ticking=false;
+window.addEventListener('scroll',()=>{
+  if(ticking) return;
+  ticking=true;
+  requestAnimationFrame(()=>{
+    const cur=window.scrollY;
+    if(cur>lastY && cur>80){
+      header.classList.add('header-hidden');
+      nav.classList.remove('open');
+    } else {
+      header.classList.remove('header-hidden');
+    }
+    lastY=cur;
+    ticking=false;
+  });
+},{passive:true});
+toggle.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const id=this.getAttribute('href');
+    if(id.length>1){
+      const t=document.querySelector(id);
+      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+    }
+  })
+});
+</script>
+</body>
+</html>
